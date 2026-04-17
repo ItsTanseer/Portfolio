@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Love+Light&family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Stick+No+Bills:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Love+Light&family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Stick+No+Bills:wght@200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Jura:wght@300..700&family=Love+Light&family=Orbitron:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Stick+No+Bills:wght@200..800&display=swap');
+@import "tailwindcss";
+
+body {
+    background-color: black;
+    
+}
+@keyframes infinite-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.animate-infinite-scroll {
+  display: flex;
+  width: max-content; /* Critical: tells the list to be as long as the items */
+  animation: infinite-scroll 25s linear infinite;
+}
+.space-light {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 400;
+}
+.space-bold {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+}
+.space-med {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+}
+.orbitron {
+  font-family: "Orbitron", sans-serif;
+}
+
+.jura {
+  font-family: "Jura", sans-serif;
+}
+.jura-bold {
+  font-family: "Jura", sans-serif;
+  font-weight: 700;
+}
+
+html, body {
+  cursor: none;
+}
