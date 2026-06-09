@@ -11,17 +11,19 @@ import { Link } from 'react-router-dom';
     const Home = () => {
 
         const skillList = [
-            { src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgTQv7iOtxY0gRAIW41MqtgVSDgwxiv8_3Fg&s", alt: "img1" },
-            { src: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png", alt: "img2" },
-            { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/C_Programming_Language.svg/500px-C_Programming_Language.svg.png", alt: "img3" },
-            { src: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png", alt: "img4" },
-            { src: "https://w7.pngwing.com/pngs/956/695/png-transparent-mongodb-original-wordmark-logo-icon-thumbnail.png", alt: "img5" },
-            { src: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/cpp/cpp.png", alt: "img6" },
-            { src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaSLBLpJp5eOR0zaf3mgYXoxZzzDqE8UtGMA&s", alt: "img7" },
-            { src: "https://ddxof.com/wp-content/uploads/2017/12/react.png  ", alt: "img8" },
-            { src: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png", alt: "img9" },
-            { src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8vQdKlVJj_w-eb2WdzfM4lAlVz08kolf4Og&s", alt: "img10" },
-            { src: "https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png", alt: "img11" }
+            { src: "/skillIcons/C.png", alt: "C" },
+            { src: "/skillIcons/cpp.png", alt: "CPP" },
+            { src: "/skillIcons/java.jpg", alt: "Java" },
+            { src: "/skillIcons/html.png", alt: "HTML" },
+            { src: "/skillIcons/css.png", alt: "CSS" },
+            { src: "/skillIcons/react.png", alt: "React" },
+            { src: "/skillIcons/tailwind.png", alt: "Tailwind" },
+            { src: "/skillIcons/nodejs.jpg", alt: "NodeJS" },
+            { src: "/skillIcons/mongodb.png", alt: "MongoDB" },
+            { src: "/skillIcons/python.png", alt: "Python" },
+            { src: "/skillIcons/jupyter.png", alt: "Jupyter" },
+            { src: "/skillIcons/pytorch.png", alt: "Pytorch" },
+            { src: "/skillIcons/fastapi.png", alt: "FastApi" },
         ];
 
         const doubledSkills = [...skillList, ...skillList];
@@ -81,8 +83,8 @@ import { Link } from 'react-router-dom';
                                             <img
                                                 src={skill.src}
                                                 alt={skill.alt}
-                                                className="h-16 w-auto object-contain transition-all duration-300 hover:scale-110"
-                                            
+                                                className="h-16 w-auto object-contain hover:alt- transition-all duration-300 hover:scale-110"
+                                                title={skill.alt}
                                             />
                                             
                                         </li>
