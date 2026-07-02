@@ -37,10 +37,17 @@ const Projects = () => {
         },
         {
             "title": "Snake Game",
-            "desc": "A classic Snake game built using React and Tailwind CSS. Smooth controls, growing snake mechanics, score tracking, and persistent high score — all running in the browser. 🚀 Features 🎮 Classic Snake gameplay (grid-based movement) 🐍 Snake grows when it eats food 🍎 Random food generation (never overlaps with snake) ⌨️ Keyboard controls with direction locking (no instant reverse) 💀 Wall collision & self-collision detection 🛑 Game Over screen with restart option 📈 Score tracking 🏆 Persistent High Score using localStorage 👀 Styled snake head (optional: eyes / direction styling) 🎨 Clean UI using Tailwind CSS",
+            "desc": "A classic Snake game built using React and Tailwind CSS. Smooth controls, growing snake mechanics, score tracking, and persistent high score — all running in the browser. 🚀 Features 🎮 Classic Snake gameplay (grid-based movement) 🐍 Snake grows when it eats food 🍎 Random food generation (never overlaps with snake) ⌨️ Keyboard controls with direction locking (no instant reverse) 💀 Wall collision & self-collision detection 🛑 Game Over screen with restart option 📈 Score tracking 🏆 Persistent High Score using localStorage  Styled snake head (optional: eyes / direction styling) 🎨 Clean UI using Tailwind CSS",
             "img":"snakegame.png",
             "techstack":"React, Tailwind CSS",
             "link":"https://snake-game-taupe-phi.vercel.app/"
+        },
+        {
+            "title": "BlitzCube",
+            "desc": "BlitzCube is a full-stack speedcubing timer and analytics platform inspired by csTimer. It enables users to practice speedcubing by recording solves, generating random WCA scrambles, tracking Personal Best (PB), Average of 5 (Ao5), and Average of 12 (Ao12), handling DNF solves according to official WCA rules, and visualizing progress through daily comparisons and weekly performance graphs. Built using React, Tailwind CSS, Express.js, MongoDB, and JWT authentication, the application provides secure user accounts, persistent solve history, and an intuitive interface for tracking long-term improvement.",
+            "img":"BlitzCube.png",
+            "techstack": "React, Tailwind, ExressJS, MongoDB, JWT, bcrypt",
+            "link": "https://blitzcube.vercel.app/"
         }
     ]
     const [descOpen, setdescOpen] = useState(false)
@@ -77,6 +84,30 @@ const Projects = () => {
             {descOpen && <ProjectDesc project={selectedProj} setdescOpen={setdescOpen} />}
             <h1 className="text-gray-300 text-4xl mx-auto">Projects</h1>
             <div className={`flex flex-col gap-6 ${descOpen && "blur-md -z-10"} md:flex-row md:flex-wrap  justify-between mx-auto p-4 m-4`}>
+                <div data-aos="fade-up" className={`w-90 h-90 mx-auto  backdrop-blur-md bg-[#101011ae] group flex-col overflow-hidden justify-between relative ${!descOpen && "hover:brightness-120 hover:-translate-y-4 hover:border-b-2 hover:border-b-[#5A189A] hover:shadow-[#8426e3b1] duration-155 ease-in-out"}  shadow-2xl shadow-[#5A189A]/60  rounded-2xl   m-4`}>
+                    <div className=" group flex flex-row h-88 gap-0">
+                        <div className={`w-1 h-80 mt-5 align-middle m-2 rounded-md ${!descOpen && "group-hover:bg-[#5A189A]"}  bg-gray-600`}> </div>
+                        <div className="flex flex-col p-3   mx-auto h-full">
+                            <h1 className='mx-auto text-gray-200 font-bold text-2xl group-hover:text-[#59189ae9]'>BlitzCube</h1>
+                            <img src='BlitzCube.png' className='w-40 h-40 mx-auto' />
+                            <p className=' text-justify leading-tight text-gray-200'>A modern speedcubing timer and statistics platform built with the MERN stack.</p>
+
+                            <button className={`m-2 w-50 h-10 mt-auto align-bottom text-white border-b-4 rounded-md ${!descOpen && "hover:bg-[#371857]   duration-125 ease-in-out"}    border-l-4 border-[#2e0a4f] w-40 mx-auto`} onClick={() => { ViewHandler(projects[5]) }}>
+                                <div className={`flex flex-row ${!descOpen && " hover:text-[#ffffff] hover:border-[#5A189A]"} text-[#9b54e1] justify-center gap-5 items-center group:`}>
+                                    View
+                                    <div className={`rounded-full  bg-[#5A189A] ${!descOpen && "group-hover:bg-[#8547c2]"}  w-3 h-3`}></div>
+                                </div>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div className="w-full h-2 bg-no-repeat bg-center transition-all duration-500 
+                                                bg-[radial-gradient(circle,_#5A189A_0%,_transparent_99%)] 
+                                                bg-[length:0%_100%] 
+                                                group-hover:bg-[length:100%_100%] 
+                                                group-hover:animate-glow-expand">
+                    </div>
+                </div>
 
 
                 <div data-aos="fade-up" className={`w-90 h-90 mx-auto   backdrop-blur-md bg-[#101011ae] group flex-col overflow-hidden justify-between relative ${!descOpen && "hover:brightness-120 hover:-translate-y-4 hover:border-b-2 hover:border-b-[#5A189A] hover:shadow-[#8426e3b1] duration-155 ease-in-out"}  shadow-2xl shadow-[#5A189A]/60  rounded-2xl   m-4`}>
@@ -212,6 +243,8 @@ Smooth controls, growing snake mechanics, score tracking, and persistent high sc
                                                 group-hover:animate-glow-expand">
                     </div>
                 </div>
+
+                
             
 
             </div>

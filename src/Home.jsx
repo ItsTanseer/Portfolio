@@ -100,13 +100,24 @@ import { Link } from 'react-router-dom';
                     {/*projects*/}
                     <div className='flex flex-col justify-center mx-auto'>
                         <h1 className='text-gray-500 font-bold text-4xl mx-auto jura'>Projects</h1>
-                        <div className='flex justify-center-safe md:justify-end-safe   align-middle group '>
-                            <Link to={'/projects'} className='text-gray-400 group-hover:underline group-hover:text-[#8a34e0]'>View all</Link>
-                            <img src='right-arrow.png' className='w-5 h-5 my-auto mx-1 opacity-85'/>
-                        </div>
+                        
 
                         {/*project cards*/}
+
                         <div className='flex flex-row m-3 p-3 gap-3 flex-wrap mx-auto justify-center'>
+                            
+
+                             <div data-aos="fade-up" data-aos-delay="400"  className='w-80 h-80   hover:shadow-2xl group hover:shadow-[#8426e3b1] ease-in-out duration-275  bg-[#11041f59] rounded-xl'>
+                                <div className='flex flex-row h-full '>
+                                    <div className='w-1 h-70 my-2.5 mx-2 bg-gray-400 rounded-md group-hover:bg-[#8426e3b1] '></div>
+                                    <div className='mx-auto h-full my-auto flex flex-col'>
+                                        <h1 className='mx-auto  top-0 text-[#8a34e0] font-bold text-2xl mb-2'>BlitzCube</h1>
+                                        <img src='BlitzCube.png' className='w-40 h-40 mx-auto' />
+                                        <p className=' text-gray-300 mt-1 py-2 w-70 space-light tracking-tight'>A modern speedcubing timer and statistics platform built with the MERN stackA modern speedcubing timer and statistics platform built with the MERN stack.</p>
+                                    </div>
+                                </div>
+                            </div>
+
 
                             <div data-aos="fade-up"  className='w-80 h-80 hover:shadow-2xl group hover:shadow-[#8426e3b1] ease-in-out duration-275  rounded-xl bg-[#11041f59]'>
                                 <div className='flex flex-row h-full '>
@@ -123,16 +134,7 @@ import { Link } from 'react-router-dom';
 
 
                             </div>
-                            <div data-aos="fade-up" data-aos-delay="200"  className='w-80 h-80   hover:shadow-2xl group hover:shadow-[#8426e3b1] ease-in-out duration-275 bg-[#11041f59] rounded-xl'>
-                                <div className='flex flex-row h-full'>
-                                    <div className='w-1 h-70 my-2.5 mx-2 bg-gray-400 rounded-md group-hover:bg-[#8426e3b1] '></div>
-                                    <div className='flex flex-col mx-auto h-full my-auto  '>
-                                        <h1 className='mx-auto  top-0 text-[#8a34e0] font-bold text-2xl mb-2'>To-do List App</h1>
-                                        <img src='todolist.png' className='w-40 h-40 mx-auto' />
-                                        <p className=' text-justify text-gray-300 mt-1 space-light tracking-tight'>React-based task manager with JSON server backend.</p>
-                                    </div>
-                                </div>
-                            </div>
+                           
 
                             <div data-aos="fade-up" data-aos-delay="400"  className='w-80 h-80   hover:shadow-2xl group hover:shadow-[#8426e3b1] ease-in-out duration-275  bg-[#11041f59] rounded-xl'>
                                 <div className='flex flex-row h-full '>
@@ -146,13 +148,19 @@ import { Link } from 'react-router-dom';
                                 </div>
                             </div>
 
+                            
+
+                            
 
 
 
 
 
 
-
+                        </div>
+                        <div className='flex relative hover:bg-black ease-in-out duration-320 transition-all justify-center-safe md:justify-end-safe mx-auto bg-[#8426e3b1] rounded-md w-40    align-middle group hover:shadow-xl hover:shadow-[#8426e3b1] '>
+                            <Link to={'/projects'} className='text-white font-bold text-xl transition-all durationn 300   group-hover:text-[#8a34e0] mx-auto'>View all</Link>
+                            
                         </div>
                     </div>
                    

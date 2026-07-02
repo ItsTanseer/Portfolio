@@ -9,6 +9,8 @@ const Skills = () => {
     const backend=["ExpressJS", "FastAPI", "NodeJS"];
     const languages=["Java", "C", "Python", "C++"];
     const DB=["OracleSQL", "MongoDB"];
+    const ML = ["Supervised learning", "Deep learning", "Neural Networks", "Transformers", "RAG","Langchain"]
+
     return (
         <div className="flex flex-col justify-center mx-auto mt-30">
             <div className="jura mx-auto text-gray-500 font-bold text-4xl">
@@ -109,6 +111,30 @@ const Skills = () => {
                                     className="transition-all duration-300 hover:bg-[#8426e3]/50 text-gray-400 hover:text-gray-100"
                                 >
                                     <td className="px-10 py-3 border-t border-white/10 tracking-wide ">
+                                        {item}
+                                    </td>
+                                </tr>
+                            ))}
+                        </tbody>
+
+                    </table>
+                    <table data-aos="fade-up" className="border border-[#8426e3]/40 backdrop-blur-xl bg-white/5 text-white overflow-hidden shadow-xl shadow-[#8426e3]/40">
+
+                        <thead>
+                            <tr className="bg-linear-to-r from-[#8426e3]/70 to-purple-900/70">
+                                <th className="px-10 py-4 text-2xl font-space tracking-wide text-gray-300">
+                                    ML and AI
+                                </th>
+                            </tr>
+                        </thead>
+
+                        <tbody className="text-center">
+                            {ML.map((item, i) => (
+                                <tr
+                                    key={i}
+                                    className="transition-all duration-300 hover:bg-[#8426e3]/50 text-gray-400 hover:text-gray-100"
+                                >
+                                    <td className="px-10 py-3 border-t border-white/10 tracking-wide">
                                         {item}
                                     </td>
                                 </tr>
